@@ -1,0 +1,6 @@
+type Coder {
+  id: ID!
+  name: String
+  city: String
+  skills: [Skill]
+}

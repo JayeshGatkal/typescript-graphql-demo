@@ -1,0 +1,7 @@
+type Query {
+  coders: [Coder]
+  coder(id: Int!): Coder
+  codersBySkill(language: String!): [Coder]
+  skills: [Skill]
+  skill(id: Int!): Skill
+}

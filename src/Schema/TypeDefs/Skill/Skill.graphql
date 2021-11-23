@@ -1,0 +1,6 @@
+type Skill {
+  id: ID
+  language: String
+  experience: Float
+  coder: Coder
+}
