@@ -1,6 +1,7 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import coders from '../../../data/coders';
+import * as skilMutations from './mutations'
 
 const typeDefs = readFileSync(join(__dirname, 'Skill.graphql')).toString();
 
@@ -15,5 +16,7 @@ const schemaDef = {
     Skill: Skill,
   },
 };
+
+export const mutations = skilMutations;
 
 export default schemaDef;

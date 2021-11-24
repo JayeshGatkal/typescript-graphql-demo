@@ -4,3 +4,10 @@ type Skill {
   experience: Float
   coder: Coder
 }
+
+input SkillInput {
+  id: Int
+  language: String
+  experience: Float
+  coderId: Int
+}

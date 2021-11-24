@@ -13,7 +13,7 @@ const main = async () => {
 
   express()
     .use(morgan('combined'))
-    .use(graphqlHandler)
+    .use('/api', graphqlHandler)
     .listen(PORT, () => console.log(`listening on port ${PORT}`));
 };
 
